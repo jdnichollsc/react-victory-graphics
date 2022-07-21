@@ -50,6 +50,10 @@ export default function PieChart() {
       y: 22000,
     },
     {
+      x: new Date('2022-07-21T11:00:00.00Z'),
+      y: 130000,
+    },
+    {
       x: new Date('2022-07-21T13:00:00.00Z'),
       y: 210000,
     },
@@ -75,7 +79,7 @@ export default function PieChart() {
     { label: 'Bourbon', color: 'magenta', data: bourbonData },
   ];
   return (
-    <div className="pie-chart-card">
+    <div className="price-chart-card">
       <h1>Prices</h1>
       <VictoryChart width={500} height={400} scale={{ x: 'time' }}>
         <VictoryAxis tickValues={dates} tickFormat={(d) => formatHour(d)} />
