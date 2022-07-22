@@ -121,6 +121,9 @@ export default function PieChart() {
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
+            style={{
+              color,
+            }}
           >
             {' '}
             <path stroke="none" d="M0 0h24v24H0z" />
