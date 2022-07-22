@@ -105,6 +105,11 @@ export default function PieChart() {
                 data: { fill: color, stroke: color },
               }}
               data={data}
+              animate={{
+                duration: 1000,
+                easing: 'quad',
+                onLoad: { duration: 1000 },
+              }}
             />
           ))}
         </VictoryGroup>
