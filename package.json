@@ -25,7 +25,7 @@
     "build:css": "npm run generate:css -- --env production",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "generate:css": "postcss styles/**/*.css --base styles --dir dist"
+    "generate:css": "postcss styles/style.css -o dist/style.css -w"
   },
   "devDependencies": {
     "react-scripts": "latest"
